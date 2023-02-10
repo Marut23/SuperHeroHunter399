@@ -1,0 +1,186 @@
+/* body background */
+body{
+    background-image: url("https://cdn.wallpapersafari.com/73/94/xoyNhk.jpg");
+    background-size: cover;
+}
+
+/* Body Header */
+
+#body-header {
+    height: 8vh;
+    opacity: 0.8;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists or Navigation Bar */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: cyan;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Search bar */
+.search-container{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
+
+#search-hero{
+    width: 700px;
+    height: 40px;
+    background-color: transparent;
+    font-size: 20px;
+    border: 2px solid rgb(115, 242, 242);
+    border-radius: 8px;
+    color: aliceblue;
+}
+
+::placeholder{
+    text-align: center;
+    color: white;
+}
+
+/* Search Results Slides */
+#search-results{
+    height: 350px;
+    width: 700px;
+    border: none;
+}
+
+div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: scroll;
+    height: 60vh;
+    width: 50%;
+    margin: 5px auto;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+div ul li{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.search-Results{
+    color: white;
+}
+
+.search-Results:active{
+    color: red;
+}
+
+.image-size{
+    width: 100px;
+    height: 100px;
+}
+
+#delFav{
+    color: red;
+    font-size: 25px;
+}
+
+#delFav:hover{
+    cursor:pointer;
+}
+
+#addFav:hover{
+    cursor:pointer;
+}
+
+#addFav{
+    font-size: 25px;
+    color: lightgray;
+}
+
+.search-item a{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+/* Media Queries for Search bar */
+
+@media screen  and (max-width: 1024px){
+    #search-hero{
+        position: relative;
+        top: -100px;
+    }
+
+    #search-results{
+        height: 350px;
+        width: 700px;
+        position: relative;
+        top: -100px;
+    }
+}
+
+@media screen  and (max-width: 768px){
+    #search-hero{
+        width: 500px;
+        position: relative;
+        top: -100px;
+    }
+
+    #search-results{
+        height: 350px;
+        width: 700px;
+        position: relative;
+        top: -100px;
+    }
+}
+
+@media screen  and (max-width: 425px){
+    #search-hero{
+        width: 300px;
+        height: 70px;
+        position: relative;
+        top: -100px;
+    }
+
+    #search-results{
+        height: 600px;
+        width: 300px;
+        position: relative;
+        top: -100px;
+    }
+}
